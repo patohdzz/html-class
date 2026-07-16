@@ -1,47 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Profile</title>
 </head>
 <body>
-    <p>This is a paragraph.</p>
+
+    <!-- Header Section: Name and Intro -->
     <header>
-        <h1>My first HTML Page</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ex.
-        </p>
+        <h1 id="">Patricio Hernandez</h1>
+        <p id="">I am currently practicing designing and implementing webpages using HTML and CSS.</p>
+
+        <nav>
+            <a href="#about">About</a> 
+            <a href="#contact">Contact</a> 
+            <a href="#gallery">Gallery</a>
+        </nav>
     </header>
 
+    <!-- Main Content Area -->
     <main>
-        <section>
-            <h2>What I am Learning</h2>
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a 22 year old living in Texas hoping to become a software engineer.</p>
+        </section>
+
+        <!-- Gallery Section (3 Images) -->
+        <section id="gallery">
+            <h2>My Gallery</h2>
+            <p>[A visual look at my projects, workplace, or favorite spots]</p>
+            
+            <!-- Replace the src URLs with your own image file paths or online URLs -->
+            <img width="250" height="300" src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Description of first image (e.g., My desk setup)">
+            <img width="250" height="300" src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Description of second image (e.g., Working on a coding project)">
+            <img width="250" height="300" src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Description of third image (e.g., Scenic photo from a recent hike)">
+        </section>
+
+        <!-- Learning Goals Section -->
+        <section id="learning-goals">
+            <h2>Learning Goals</h2>
+            <p>[What are you currently learning or hoping to master next?]</p>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>Bootstrap</li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li> 
+                <li>[Goal 1, e.g., Master HTML & CSS]</li>
+                <li>[Goal 2, e.g., Learn JavaScript]</li>
+                <li>[Goal 3, e.g., Build 3 portfolio projects]</li>
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Use this form to send practice message.</p>
-
-            <form>
-                <div>
-                    <label for="full-name">FullName</label>
-                    <input type="text" id="full-name" name="fullname" placeholder="Enter your full name" required>
-                </div>
-            </form>
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <p>[What do you love to do when you aren't coding?]</p>
+            <ul>
+                <li>Watching sports</li>
+                <li>Working out</li>
+                <li>Cooking</li>
+            </ul>
         </section>
-    
+
+        <!-- Links / Contact Section -->
+        <section id="links">
+            <h2>Connect with Me</h2>
+            <p>Feel free to check out my work or get in touch through these platforms:</p>
+            <ul>
+                <!-- target="_blank" opens the link in a new browser tab -->
+                <li><a href="https://github.com/patohdzz" target="_blank" >My GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/[your-username]" target="_blank" >My LinkedIn Profile</a></li>
+                <li><a href="ppato732@gmail.com">Send Me an Email</a></li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </section>
+
+
+         <section id="contact">
+            <h2>Contact Me</h2>
+                <p>Use this form to send practice message</p>
+
+                <form>
+                    <div>
+                         <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div>
+                         <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="topic">Topic</label>
+                        <select name="topic" id="topic">
+                            <option value="">Choose a Topic</option>
+                            <option value="">Project Feedback</option>
+                            <option value="">Collaboration</option>
+                            <option value="">Questions</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                         <legend>Preferred contact method</legend>
+
+                        <label>
+                            <input type="radio" name="contactMethod" value="email">
+                            Email
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contactMethod" value="phone">
+                            Phone
+                        </label>
+                    </fieldset>
+                     <fieldset>
+                        <legend>Interests</legend>
+
+                        <label>
+                            <input type="checkbox" name="interests" value="html">
+                            HTML
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="interests" value="css">
+                            CSS
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="interests" value="ai">
+                            AI-assisted development
+                        </label>
+                        </fieldset>
+
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                </form>
+        </section>
+
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>Created during HTML practice</p>
+        <p>&copy; 2026 [Your Name]. All rights reserved.</p>
     </footer>
 
 </body>

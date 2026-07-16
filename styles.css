@@ -1,0 +1,102 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+header
+{
+    background-color: #1f2937;
+    color: white;
+    padding: 25px;
+}
+
+nav a 
+{
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+main
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+section
+{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+h1, h2
+{
+    margin-top: 0;
+}
+
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+
+ul, ol
+{
+    padding-left: 24px;
+}
+
+form, div, fieldset
+{
+    margin-bottom: 16px;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button
+{
+    font: inherit;
+}
+
+input, select, textarea
+{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bbbbbb;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+    width: auto;
+}
+
+button{
+    background-color: #0f766e;
+    color:white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: #115e59;
+}
