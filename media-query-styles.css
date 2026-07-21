@@ -1,0 +1,13 @@
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+/* works on a screen width above 768, will revert under */
+@media (min-width: 768px) {
+    .profile-grid {
+        /* 1fr is one for each row */
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
